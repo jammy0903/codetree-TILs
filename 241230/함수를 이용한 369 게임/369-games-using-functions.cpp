@@ -27,7 +27,7 @@ int main() {
     
     for(int i = a; i <= b; i++) {
         if(correct(i)) {
-            cout << i << endl;
+            //cout << i << endl;
             cnt++;
         }
     }
