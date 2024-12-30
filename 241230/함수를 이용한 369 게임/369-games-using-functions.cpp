@@ -1,23 +1,23 @@
 #include <iostream>
 using namespace std;
 
-bool correct(int num1);
-
 bool correct(int num1) {
-    int fir = num1/10;
-    int sec = num1%10;
-
-    // 3의 배수인 경우
-    if(num1 % 3 == 0) {return true; }
-
-        
-    
-    // 첫째 자리가 3,6,9이고
-    if ((fir == 3)|| (fir == 6) || (fir == 9)||(sec == 3) || (sec == 6) || (sec == 9) ){
-        // 둘째 자리가 3,6,9이고
-    return true;      
+    // 3의 배수 체크
+    if(num1 % 3 == 0) {
+        return true;
     }
-    return false;  // 조건을 만족하지 않는 경우
+    
+    // 각 자릿수에 3,6,9가 있는지 체크
+    int temp = num1;
+    while(temp > 0) {
+        int digit = temp % 10;  // 현재 자릿수
+        if(digit == 3 || digit == 6 || digit == 9) {
+            return true;
+        }
+        temp /= 10;  // 다음 자릿수로 이동
+    }
+    
+    return false;
 }
 
 int main() {
@@ -27,7 +27,7 @@ int main() {
     
     for(int i = a; i <= b; i++) {
         if(correct(i)) {
-            
+            cout << i << endl;
             cnt++;
         }
     }
