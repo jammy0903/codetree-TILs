@@ -6,9 +6,9 @@ using namespace std;
 int a;
 int b;
 
-int fun(int a, int b){
-    int minint = std::min(a,b);
-    int maxint = std::max(a,b);
+int fun(int A, int B){
+    int minint = std::min(A,B);
+    int maxint = std::max(A,B);
     
     minint = minint+10;
     maxint = maxint*2;
