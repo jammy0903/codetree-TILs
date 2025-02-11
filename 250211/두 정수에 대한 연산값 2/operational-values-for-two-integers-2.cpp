@@ -15,6 +15,9 @@ int fun(int a, int b){
 }
 int main() {
     cin >> a >> b;
+    if(a==b){
+        return 0;
+    }
     fun(a,b);
 
     return 0;
