@@ -3,21 +3,32 @@ m1, d1, m2, d2 = map(int, input().split())
 # Please write your code here.
 end = [0,31,28,31,30,31,30,31,30,31,31,30,31]
 
-cnt = 1
-m1end = end[m1]
-m2end = end[m2]
+day_cnt = 0
 
-while m1<=m2 :
-    d1 +=1
-    cnt+=1
-    if d1 >= end[m1]:
-        m1 += 1
-        d1 = 0
-        continue 
-    elif m1==m2 and d1==d2:
+
+while m1 <= m2 :
+
+
+    if m1 == m2 and d1 == d2 : #정답 
+        print(day_cnt)
         break
+    elif  m1 == m2 and d1 < d2 :
+        d1 +=1
+        day_cnt +=1
+        continue
 
-print(cnt)
+    elif m1 < m2  and d1 < end[m1] :
+        d1 +=1
+        day_cnt +=1
+        continue
+
+    elif m1 < m2 and d1 == end[m1] : #경계선
+        d1 = 0 # 1개월 올리자.
+        m1 +=1
+        day_cnt +=1
+        continue
+    
+
 
 
 
