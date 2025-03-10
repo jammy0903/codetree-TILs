@@ -9,26 +9,29 @@ day_cnt = 0
 while m1 <= m2 :
 
 
-    if m1 == m2 and d1 == d2 : #정답 
-        print(day_cnt)
-        break
-    elif  m1 == m2 and d1 < d2 :
-        d1 +=1
-        day_cnt +=1
-        continue
+    if m1 == m2 :
+        if d1 == d2 : #정답 
+            day_cnt +=1
+            break
 
-    elif m1 < m2  and d1 < end[m1] :
-        d1 +=1
-        day_cnt +=1
-        continue
+        elif d1 < d2 :
+            d1 +=1
+            day_cnt +=1
+            continue
 
-    elif m1 < m2 and d1 == end[m1] : #경계선
-        d1 = 0 # 1개월 올리자.
-        m1 +=1
-        day_cnt +=1
-        continue
+    elif m1 < m2  :
+        if d1 < end[m1] :
+            d1 +=1
+            day_cnt +=1
+            continue
+
+        elif d1 == end[m1] : #경계선
+            d1 = 1 # 1개월 올리자.
+            m1 +=1
+            day_cnt +=1
+            continue
     
-
+print(day_cnt)
 
 
 
