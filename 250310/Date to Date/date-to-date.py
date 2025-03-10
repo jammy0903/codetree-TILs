@@ -11,7 +11,7 @@ while m1<=m2 :
     d1 +=1
     cnt+=1
     if d1 >= end[m1]:
-        m1 += m1
+        m1 += 1
         d1 = 0
         continue 
     elif m1==m2 and d1==d2:
