@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+    int capacity = 1;
+    int size = 0;
+    int* even = malloc(sizeof(int) * capacity);
+
+    char line[1024];
+
+    while (1) {
+        // 1️⃣ 한 줄 입력
+        if (fgets(line, sizeof(line), stdin) == NULL) {
+            break; // EOF
+        }
+
+        // 2️⃣ 엔터만 치면 종료
+        if (strcmp(line, "\n") == 0) {
+            break;
+        }
+
+        // 3️⃣ 공백 기준으로 숫자 분리
+        char* token = strtok(line, " ");
+        while (token != NULL) {
+            int num = atoi(token);
+
+            // 4️⃣ 짝수 판별
+            if (num % 2 == 0) {
+
+                // 5️⃣ 공간 부족하면 realloc
+                if (size == capacity) {
+                    capacity *= 2;
+                    int* temp = realloc(even, sizeof(int) * capacity);
+                    if (temp == NULL) {
+                        free(even);
+                        return 1;
+                    }
+                    even = temp;
+                }
+
+                even[size++] = num;
+                printf("%d\n", num);
+            }
+
+            token = strtok(NULL, " ");
+        }
+    }
+
+    free(even);
+    return 0;
+}
