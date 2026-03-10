@@ -14,20 +14,18 @@ def DFS(v):
     visited[v] = True
     
     for neighbor in graph[v]:
-        if visited[neighbor] == False: 
+        if visited[neighbor] == False:
             DFS(neighbor)
-count = 0   
-           
-for i in range(1,N+1):
-     if visited[i] == False:
-         DFS(i)
-         count +=1
-         
-     
-print(count)
+
             
-
-
+    
+count = 0 
+for i in range(1,N+1):
+    if visited[i] == False : 
+        DFS(i)
+        count +=1
+    
+print(count)
 
 
 
