@@ -1,31 +1,23 @@
-import sys 
+import sys
+
 input = sys.stdin.readline
+sys.setrecursionlimit(10**6)
+n,m = map(int,input().split())
+map = [list(map(int,input().strip())) for _ in range(n)]
 from collections import deque
-que= deque()
-N,M = map(int,input().split())
-grid = [list(map(int,input().rstrip()))for _ in range(N)]
+#시작점은 0,0
+que = deque()
 
-
-def BFS(X,Y):
-
-    if X == N-1 and Y == M-1 : 
-        print(grid[X][Y])
-    que.append((X,Y))
-    
-    while(que):
-        curX , curY = que.popleft()
-        if curX == N-1 and curY == M-1 : 
-            print(grid[curX][curY])
-    
-        for dx,dy in [(-1,0),(1,0),(0,1),(0,-1)]:
-            newX = curX + dx
-            newY = curY + dy
-            if 0<=newX<N and 0<=newY<M and grid[newX][newY] == 1:
-                
-                grid[newX][newY] = grid[curX][curY]+1
-                que.append((newX,newY))
-                
-
-
-
-BFS(0,0)
+que.append((0,0))
+map[0][0] = 0
+while(que):
+    r,c = que.popleft()
+    for dr,dc in [(0,1),(0,-1),(1,0),(-1,0)]:
+        nr = r + dr
+        nc = c + dc
+        
+        if 0<=nr<n and 0<=nc<m :
+            if map[nr][nc] == 1:
+                que.append((nr,nc))
+                map[nr][nc] = map[r][c]+1
+print(map[n-1][m-1]+1)
