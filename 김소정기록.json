@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "name": "김소정",
+    "created": "2026-04-10",
+    "last_updated": "2026-04-10",
+    "total_asked": 22,
+    "total_wrong": 17,
+    "session_count": 1
+  },
+  "topics": {
+    "Security": {
+      "_total": { "asked": 0, "wrong": 0 },
+      "OTP": { "asked": 0, "wrong": 0 },
+      "OAuth": { "asked": 0, "wrong": 0 },
+      "MAC_RBAC_DAC": { "asked": 0, "wrong": 0 },
+      "malware_types": { "asked": 0, "wrong": 0 },
+      "SSH_L2TP_VPN": { "asked": 0, "wrong": 0 },
+      "encryption_symmetric_asymmetric": { "asked": 0, "wrong": 0 },
+      "error_detection_FEC_BEC_CRC_Hamming": { "asked": 0, "wrong": 0 },
+      "firewall_IDS_IPS": { "asked": 0, "wrong": 0 },
+      "attack_types_XSS_CSRF_SQL_injection": { "asked": 0, "wrong": 0 },
+      "other": { "asked": 0, "wrong": 0 }
+    },
+    "Networking": {
+      "_total": { "asked": 0, "wrong": 0 },
+      "OSI_7_layer": { "asked": 0, "wrong": 0 },
+      "TCP_IP_protocol": { "asked": 0, "wrong": 0 },
+      "IP_addressing_subnetting": { "asked": 0, "wrong": 0 },
+      "routing_protocols": { "asked": 0, "wrong": 0 },
+      "HTTP_HTTPS_REST": { "asked": 0, "wrong": 0 },
+      "switching_VLAN": { "asked": 0, "wrong": 0 },
+      "AJAX_web_technology": { "asked": 0, "wrong": 0 },
+      "other": { "asked": 0, "wrong": 0 }
+    },
+    "Database": {
+      "_total": { "asked": 0, "wrong": 0 },
+      "normalization": { "asked": 0, "wrong": 0 },
+      "transaction_ACID": { "asked": 0, "wrong": 0 },
+      "concurrency_control_locking": { "asked": 0, "wrong": 0 },
+      "index_structure": { "asked": 0, "wrong": 0 },
+      "ER_diagram_schema": { "asked": 0, "wrong": 0 },
+      "recovery_backup": { "asked": 0, "wrong": 0 },
+      "relational_algebra": { "asked": 0, "wrong": 0 },
+      "other": { "asked": 0, "wrong": 0 }
+    },
+    "SQL": {
+      "_total": { "asked": 2, "wrong": 2 },
+      "SELECT_WHERE_JOIN": { "asked": 2, "wrong": 2 },
+      "GROUP_BY_HAVING": { "asked": 0, "wrong": 0 },
+      "subquery": { "asked": 0, "wrong": 0 },
+      "INSERT_UPDATE_DELETE": { "asked": 0, "wrong": 0 },
+      "DDL_CREATE_ALTER_DROP": { "asked": 0, "wrong": 0 },
+      "aggregate_functions": { "asked": 0, "wrong": 0 },
+      "window_functions": { "asked": 0, "wrong": 0 },
+      "other": { "asked": 0, "wrong": 0 }
+    },
+    "SoftwareEngineering": {
+      "_total": { "asked": 0, "wrong": 0 },
+      "design_patterns": { "asked": 0, "wrong": 0 },
+      "UML_diagrams": { "asked": 0, "wrong": 0 },
+      "SDLC_models": { "asked": 0, "wrong": 0 },
+      "agile_scrum": { "asked": 0, "wrong": 0 },
+      "testing_types_coverage": { "asked": 0, "wrong": 0 },
+      "coupling_cohesion": { "asked": 0, "wrong": 0 },
+      "software_metrics_complexity": { "asked": 0, "wrong": 0 },
+      "requirements_analysis": { "asked": 0, "wrong": 0 },
+      "other": { "asked": 0, "wrong": 0 }
+    },
+    "OS": {
+      "_total": { "asked": 0, "wrong": 0 },
+      "process_scheduling": { "asked": 0, "wrong": 0 },
+      "memory_management_paging": { "asked": 0, "wrong": 0 },
+      "deadlock": { "asked": 0, "wrong": 0 },
+      "semaphore_mutex": { "asked": 0, "wrong": 0 },
+      "file_system": { "asked": 0, "wrong": 0 },
+      "Linux_commands": { "asked": 0, "wrong": 0 },
+      "other": { "asked": 0, "wrong": 0 }
+    },
+    "Java": {
+      "_total": { "asked": 0, "wrong": 0 },
+      "OOP_class_inheritance": { "asked": 0, "wrong": 0 },
+      "interface_abstract": { "asked": 0, "wrong": 0 },
+      "static_final": { "asked": 0, "wrong": 0 },
+      "collections_generics": { "asked": 0, "wrong": 0 },
+      "exception_handling": { "asked": 0, "wrong": 0 },
+      "lambda_functional": { "asked": 0, "wrong": 0 },
+      "output_tracing": { "asked": 0, "wrong": 0 },
+      "other": { "asked": 0, "wrong": 0 }
+    },
+    "C": {
+      "_total": { "asked": 0, "wrong": 0 },
+      "pointers": { "asked": 0, "wrong": 0 },
+      "structs": { "asked": 0, "wrong": 0 },
+      "memory_allocation_malloc_free": { "asked": 0, "wrong": 0 },
+      "recursion": { "asked": 0, "wrong": 0 },
+      "bitwise_operators": { "asked": 0, "wrong": 0 },
+      "output_tracing": { "asked": 0, "wrong": 0 },
+      "other": { "asked": 0, "wrong": 0 }
+    },
+    "Python": {
+      "_total": { "asked": 0, "wrong": 0 },
+      "list_comprehension": { "asked": 0, "wrong": 0 },
+      "lambda_map_filter": { "asked": 0, "wrong": 0 },
+      "class_inheritance": { "asked": 0, "wrong": 0 },
+      "built_in_functions": { "asked": 0, "wrong": 0 },
+      "output_tracing": { "asked": 0, "wrong": 0 },
+      "other": { "asked": 0, "wrong": 0 }
+    }
+  }
+}
