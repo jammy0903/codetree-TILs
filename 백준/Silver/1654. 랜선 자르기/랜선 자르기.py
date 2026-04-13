@@ -1,32 +1,24 @@
-import sys
+import sys 
 input = sys.stdin.readline
+n,target = map(int,input().split())
+lines = [int(input().rstrip())for _ in range(n)]
 
-lenline,need = map(int,input().split())
-linearr = [int(input().rstrip()) for _ in range(lenline)]
-
-top = int(max(linearr))
 start = 1
-end = top
+end = max(lines)
 result = 0
-cnt = 0
-while( start<=end  ): #찾을 때까지 계속한다. 못찾으면 포기 #
-    
-    mid = (start+end)//2
+
+while(start<=end):
     cnt = 0
-    for i in range(lenline):
-        cnt += linearr[i]//mid
-    if cnt < need :
-        end = mid-1
-    elif cnt >= need:
-        result = mid
-        start = mid + 1
-    elif cnt == need:
-        flag = 1
-        break
-
+    length = (start+end)//2
+    
+    for i in range(n):
+        cnt += lines[i]//length 
+        
+    if cnt >= target:
+        result = length #후보
+        start = length + 1
+    else : 
+        end = length - 1
+    
 print(result)
-    
-
-
-
-    
+        
