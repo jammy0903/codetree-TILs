@@ -1,11 +1,16 @@
 import sys 
 from collections import deque
-input = sys.stdin.readline
+from itertools import permutations
 
-
-word_input = input()
-if type(word_input) != int : 
-    word = [ord(c) for c in word_input]
-    print(word)    
-else : 
-    print(type(word_input))
+for line in sys.stdin:
+    s,n = line.split()
+    n = int(n)
+    word = list(s)
+    total = len(word)
+    if n > total:
+        print(f"{s} {n} = No permutation")
+        
+        
+    perm_list = list(permutations(s))
+    print(perm_list[0])
+     
