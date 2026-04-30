@@ -1,0 +1,17 @@
+
+# -*- coding: utf-8 -*-
+# UTF-8 encoding when using korean
+N,M = map(int,input().split())
+#가격리스트
+sum = 0
+for _ in range(N):
+	c,v = map(int,input().split())
+	sum += c*v
+
+change = M-sum
+if change < 0:
+	print("No")
+else:
+	print(change)
+	
+	
